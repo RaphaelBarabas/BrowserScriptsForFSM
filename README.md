@@ -11,4 +11,4 @@ To name a few:
 * Tampermonkey - Seems to have a large user base
 * Firemonkey - If you prefer FireFox
 
-For SAP Employees: ISE comes with a Userscript Manager already. Copy it to *%APPDATA%/ISE/scripts/dev/* (create the dev folder).
+For SAP Employees: ISE comes with a Userscript Manager already. Copy it to `%APPDATA%/ISE/scripts/dev/` (you need to create the dev folder).
