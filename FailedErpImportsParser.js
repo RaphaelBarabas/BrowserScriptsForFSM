@@ -14,8 +14,8 @@
     'use strict';
     if (document.getElementById("objectName").getInnerHTML() === "FailedERPImport")
     {
-        const re = /Caused by:.*/
-        const emsg = re.exec(document.getElementsByName("fields[2].oldValue")[1].defaultValue);
+        const re = /Caused by:.*/g
+        const emsg = document.getElementsByName("fields[2].oldValue")[1].defaultValue.match(re).join('</div><div id="parsedError" class="form-control-static" data-value="">');
         const div = document.createElement("div");
         div.setAttribute("class", "form-group form-group-md");
         div.innerHTML = `<label class="col-md-4 control-label">Parsed Error</label><div class="col-md-7"><div id="parsedError" class="form-control-static" data-value="">${emsg}</div></div>`;
